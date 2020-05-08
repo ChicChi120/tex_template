@@ -14,12 +14,19 @@
 \usepackage{amsmath}
 \usepackage{bm}
 
+% 画像
+\usepackage{graphicx}
+\usepackage[dvipdfmx]{color}
+
 % ハイパーリンク
 \usepackage[dvipdfmx]{color, hyperref}
 \usepackage{pxjahyper}
 \usepackage{cite}
 \usepackage{xcolor}
 \hypersetup{colorlinks=false}
+
+% コメントアウト
+\usepackage{comment}
 
 \title{タイトル}
 \author{名前}
@@ -34,6 +41,28 @@
 \clearpage
 
 \section{セクション1}
+
+\begin{comment}
+
+% 画像２つバージョン
+\begin{figure}[htbp]
+    \begin{minipage}{0.5\hsize}
+     \begin{center}
+      \includegraphics[width=50mm]{graph01.jpeg}
+     \end{center}
+     \caption{caption1}
+     \label{fig:one}
+    \end{minipage}
+    \begin{minipage}{0.5\hsize}
+     \begin{center}
+      \includegraphics[width=50mm]{graph02.jpeg}
+     \end{center}
+     \caption{caption2}
+     \label{fig:two}
+    \end{minipage}
+\end{figure}
+
+\end{comment}
 
 \subsection{サブセクション}
 hoge
